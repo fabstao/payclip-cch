@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# ***********************************************
+# (C) Fabian Salamanca 2018
+# ***********************************************
+
+if [ "${JAVA_HOME}" == "" ]; then
+	echo "JAVA_HOME not set"
+	exit 2
+fi
+
+${JAVA_HOME}/bin/java -jar dist/PayclipCCH.jar $@
