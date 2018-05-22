@@ -60,3 +60,22 @@ public class StorageBean {
         System.err.println("Feature not yet implemented");
     }
 }
+
+/*
+In Java 7+ you can use the Files and Path class as following:
+
+List<String> lines = Files.readAllLines(path, StandardCharsets.UTF_8);
+lines.add(position, extraLine);
+Files.write(path, lines, StandardCharsets.UTF_8);
+To give an example:
+
+Path path = Paths.get("C:\\Users\\foo\\Downloads\\test.txt");
+List<String> lines = Files.readAllLines(path, StandardCharsets.UTF_8);
+
+int position = lines.size() / 2;
+String extraLine = "This is an extraline";  
+
+lines.add(position, extraLine);
+Files.write(path, lines, StandardCharsets.UTF_8);
+
+*/
