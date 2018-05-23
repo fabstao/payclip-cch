@@ -1,0 +1,13 @@
+{[
+{ “amount”: 3.7, “description”: “Tower Records”, “date”:”2016-02-20”, “user_id”: 666 },
+{ “amount”: 3.7, “description”: “Tower Records”, “date”:”2016-02-20”, “user_id”: 666 },
+{ “amount”: 3.7, “description”: “Tower Records”, “date”:”2016-02-20”, “user_id”: 666 },
+{ “amount”: 1.23, “description”: “Joes Tacos”, “date”:”2018-12-30”, “user_id”: 345 },
+{ “amount”: 1.23, “description”: “Joes Tacos”, “date”:”2018-12-30”, “user_id”: 345 },
+{ “amount”: 1.23, “description”: “Joes Tacos”, “date”:”2018-12-30”, “user_id”: 345 },
+{ “amount”: 1.23, “description”: “Joes Tacos”, “date”:”2018-12-30”, “user_id”: 345 },
+{ “amount”: 1.23, “description”: “Joes Tacos”, “date”:”2018-12-30”, “user_id”: 345 },
+{ “amount”: 1.23, “description”: “Joes Tacos”, “date”:”2018-12-30”, “user_id”: 345 },
+{ “amount”: 1.23, “description”: “Joes Tacos”, “date”:”2018-12-30”, “user_id”: 345 },
+{ “amount”: 1.23, “description”: “Joes Tacos”, “date”:”2018-12-30”, “user_id”: 345 }
+]}
