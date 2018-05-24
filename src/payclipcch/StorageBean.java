@@ -5,14 +5,15 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.nio.file.attribute.*;
+//import java.nio.file.attribute.*;
 import java.util.List;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
-//import org.json.JSONObject;
+import org.json.JSONObject;
+import org.json.JSONArray;
 import java.nio.file.Paths;
 
 /**
@@ -52,7 +53,7 @@ public class StorageBean {
         		System.out.println("No encontre archivo, creando uno: "+logFile.getCanonicalPath());
 
         		writer = new BufferedWriter(new FileWriter(logFile, true));
-        		writer.write("{[\n"+transaction + "\n]}\n");
+        		writer.write("[\n"+transaction + "\n]\n");
         		writer.close();
         	}
         } catch (IOException e) {
@@ -98,7 +99,12 @@ public class StorageBean {
             while((line = bufferedReader.readLine()) != null) {
                 salida += line;
             }   
-
+            JSONArray jdata = new JSONArray(salida);
+            for (int i = 0; i < jdata.length(); i++) {
+                JSONObject jobj = jdata.getJSONObject(i);
+		System.out.println("Transaction: "+jobj.getString("transaction_id"));
+                System.out.println("User ID: "+jobj.getInt("user_id"));
+            }
             // Always close files.
             bufferedReader.close();         
         }
