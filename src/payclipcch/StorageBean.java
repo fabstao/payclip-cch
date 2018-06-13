@@ -24,15 +24,17 @@ public class StorageBean {
     public static final int FILE=0;
     public static final int DB=1;
     private int option;
+    private String userid;
     
-    public StorageBean(int option){
+    public StorageBean(String userid, int option){
         this.option = option;
+        this.userid = userid;
     }
     
     public void Commit(String transaction) {
         switch(this.option){
             case 0:
-                saveFile(transaction);
+                saveFile(this.userid, transaction);
                 break;
             case 1:
                 saveDB();
@@ -40,9 +42,10 @@ public class StorageBean {
         }
     }
     
-    private void saveFile(String transaction) {
+    private void saveFile(String userid, String transaction) {
     	BufferedWriter writer = null;
-    	String pafile = "pcchstore.dat";
+    	//String pafile = "pcchstore.dat";
+        String pafile = userid+".dat";
     	
         try {
             //create text store
@@ -98,12 +101,13 @@ public class StorageBean {
 
             while((line = bufferedReader.readLine()) != null) {
                 salida += line;
+                salida += "\n";
             }   
             JSONArray jdata = new JSONArray(salida);
             for (int i = 0; i < jdata.length(); i++) {
                 JSONObject jobj = jdata.getJSONObject(i);
-		System.out.println("Transaction: "+jobj.getString("transaction_id"));
-                System.out.println("User ID: "+jobj.getInt("user_id"));
+		//System.out.println("Transaction: "+jobj.getString("transaction_id"));
+                //System.out.println("User ID: "+jobj.getInt("user_id"));
             }
             // Always close files.
             bufferedReader.close();         
@@ -121,5 +125,48 @@ public class StorageBean {
             // ex.printStackTrace();
         }
         return salida;
+    }
+    
+    public static int sumdata(String fileName) {
+        
+        String line = null;
+        String salida = "";
+        int sum=0;
+        try {
+            // FileReader reads text files in the default encoding.
+            FileReader fileReader = 
+                new FileReader(fileName);
+
+            // Always wrap FileReader in BufferedReader.
+            BufferedReader bufferedReader = 
+                new BufferedReader(fileReader);
+
+            while((line = bufferedReader.readLine()) != null) {
+                salida += line;
+                salida += "\n";
+            }   
+            JSONArray jdata = new JSONArray(salida);
+            sum = jdata.length();
+            for (int i = 0; i < sum; i++) {
+                JSONObject jobj = jdata.getJSONObject(i);
+		//System.out.println("Transaction: "+jobj.getString("transaction_id"));
+                //System.out.println("User ID: "+jobj.getInt("user_id"));
+            }
+            // Always close files.
+            bufferedReader.close();         
+        }
+        catch(FileNotFoundException ex) {
+            System.out.println(
+                "Unable to open file '" + 
+                fileName + "'");                
+        }
+        catch(IOException ex) {
+            System.out.println(
+                "Error reading file '" 
+                + fileName + "'");                  
+            // Or we could just do this: 
+            // ex.printStackTrace();
+        }
+        return sum;
     }
 }

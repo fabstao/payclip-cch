@@ -1,6 +1,0 @@
-[
-{ "transaction_id": "2299ce24-9eaf-417f-82d6-e57f93777dc4", "amount": 1.23, "description": "Joes Tacos", "date":"2018-12-30", "user_id": 345 },
-{ "transaction_id": "1188ce24-9eaf-417f-82d6-e57f93777342", "amount": 75.34, "description": "Juan Perez Burritos", "date":"2016-11-10", "user_id": 132 },
-{ "transaction_id": "1188ce24-9eaf-417f-82d6-e57f93777342", "amount": 75.34, "description": "Juan Perez Burritos", "date":"2016-11-10", "user_id": 132 },
-{ "transaction_id": "2299ce24-9eaf-417f-82d6-e57f93777dc4", "amount": 1.23, "description": "Joes Tacos", "date":"2018-12-30", "user_id": 345 }
-]

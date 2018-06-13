@@ -11,7 +11,10 @@ package payclipcch;
  */
 public class SumTransactions {
     public static void tsum(String user_id){
-        System.out.println("Sum from User ID: "+user_id);
+        StorageBean suma = new StorageBean(user_id,0);
+        int salida = suma.sumdata(user_id+".dat");
+        System.out.println("{ \"user_id\": \""+user_id+
+                "\", \"sum\": "+String.valueOf(salida)+" }");
     }
     
 }

@@ -5,6 +5,7 @@
         <group>
             <file>file:/Users/fsalaman/src/java/PayclipCCH/src/payclipcch/ListTransactions.java</file>
             <file>file:/Users/fsalaman/src/java/PayclipCCH/src/payclipcch/SaveTransaction.java</file>
+            <file>file:/Users/fsalaman/src/java/PayclipCCH/src/payclipcch/StorageBean.java</file>
             <file>file:/Users/fsalaman/src/java/PayclipCCH/src/payclipcch/JsonTransaction.java</file>
             <file>file:/Users/fsalaman/src/java/PayclipCCH/src/payclipcch/SumTransactions.java</file>
             <file>file:/Users/fsalaman/src/java/PayclipCCH/src/payclipcch/PayclipCCH.java</file>

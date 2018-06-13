@@ -10,9 +10,9 @@ package payclipcch;
  * @author fsalaman
  */
 public class SaveTransaction {
-    public static void tsave(String transaction) {
+    public static void tsave(String userid, String transaction) {
         //In order to use MongoDB instead of files, change option to 1
-        StorageBean tsave = new StorageBean(0);
+        StorageBean tsave = new StorageBean(userid,0);
         tsave.Commit(transaction);
     }
     
