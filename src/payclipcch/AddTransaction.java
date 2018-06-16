@@ -1,5 +1,5 @@
 /*
- * (C) 2018 Fabian Salamanca Dominguez
+/ * (C) 2018 Fabian Salamanca Dominguez
  */
 package payclipcch;
 

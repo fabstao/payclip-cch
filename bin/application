@@ -9,5 +9,3 @@
 #fi
 
 java -jar dist/PayclipCCH.jar $@
-
-echo $?

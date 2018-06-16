@@ -3,14 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Users/fsalaman/src/java/PayclipCCH/src/payclipcch/ListTransactions.java</file>
-            <file>file:/Users/fsalaman/src/java/PayclipCCH/src/payclipcch/SaveTransaction.java</file>
-            <file>file:/Users/fsalaman/src/java/PayclipCCH/src/payclipcch/StorageBean.java</file>
-            <file>file:/Users/fsalaman/src/java/PayclipCCH/src/payclipcch/JsonTransaction.java</file>
-            <file>file:/Users/fsalaman/src/java/PayclipCCH/src/payclipcch/SumTransactions.java</file>
-            <file>file:/Users/fsalaman/src/java/PayclipCCH/src/payclipcch/PayclipCCH.java</file>
-            <file>file:/Users/fsalaman/src/java/PayclipCCH/src/payclipcch/AddTransaction.java</file>
-            <file>file:/Users/fsalaman/src/java/PayclipCCH/src/payclipcch/ShowTransaction.java</file>
+            <file>file:/C:/Users/fsalaman/src/java/payclip-cch/src/payclipcch/JsonTransaction.java</file>
+            <file>file:/C:/Users/fsalaman/src/java/payclip-cch/src/payclipcch/ShowTransaction.java</file>
+            <file>file:/C:/Users/fsalaman/src/java/payclip-cch/src/payclipcch/AddTransaction.java</file>
+            <file>file:/C:/Users/fsalaman/src/java/payclip-cch/src/payclipcch/StorageBean.java</file>
         </group>
     </open-files>
 </project-private>

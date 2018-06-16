@@ -21,6 +21,9 @@ public class PayclipCCH {
         //Handle args, custom for specific reqs
         int cargs = args.length;
         switch(cargs) {
+            case 1:
+                ShowTransaction.tshow(args[0]);
+                break;
             case 2:
                 switch(args[1]) {
                     case "list":
@@ -30,7 +33,8 @@ public class PayclipCCH {
                         SumTransactions.tsum(args[0]);
                         break;
                     default:
-                        ShowTransaction.tshow(args[0],args[1]);
+                        usoError();
+                        System.exit(1);
                         break;
                 }
                 break;
