@@ -8,6 +8,5 @@
 #	exit 2
 #fi
 
-java -jar dist/PayclipCCH.jar $@
+java -jar dist/PayclipCCH.jar "$@"
 
-echo $?
