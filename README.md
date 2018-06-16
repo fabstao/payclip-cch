@@ -7,8 +7,8 @@ User guide:
 
 From root directory run ./application wrapper script.
 
-./application <userid> add <transaction-json>
-./application <userid> list
-./application <userid> sum
-./application <transaction-id>
+./application <lt/>userid<gt/> add <transaction-json>
+./application <lt/>userid<gt/> list
+./application <lt/>userid<gt/> sum
+./application <lt/>transaction-id<gt/>
 
