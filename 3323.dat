@@ -1,7 +1,4 @@
 [
-{"date":"2018-06-16","transaction_id":"f0e9c290-5f60-4f25-b79b-bf24973226df","amount":22.3,"user_id":"3323","description":"Panama Souvenir"},
-{"date":"2018-06-16","transaction_id":"9624a312-74d7-4d72-ac46-23f8e7f1dc2b","amount":22.3,"user_id":"3323","description":"Panama Souvenir"},
-{"date":"2018-06-16","transaction_id":"576ceb12-c136-4ac6-a7a0-30940e14713f","amount":22.3,"user_id":"3323","description":"Panama Souvenir"},
-{"date":"2016-10-11","transaction_id":"5a862801-2528-4280-a7a7-f2200a495ae3","amount":24,"user_id":"3323","description":"Wolverine Action Figure"},
-{"date":"2018-03-09","transaction_id":"a6f47323-7c08-46b8-bb59-732913daea7a","amount":135.9,"user_id":"3323","description":"Baymax Teddy"}
+{"date":"2016-10-11","transaction_id":"43f4381d-485c-4262-b197-05c842a65b28","amount":24,"user_id":"3323","description":"Wolverine Action Figure"},
+{"date":"2018-03-09","transaction_id":"e0aae6ea-03e3-40d5-91bd-691a256a3095","amount":135.9,"user_id":"3323","description":"Baymax Teddy"}
 ]
