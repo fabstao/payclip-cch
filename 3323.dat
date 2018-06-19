@@ -1,4 +1,5 @@
 [
+{"date":"2018-06-16","transaction_id":"3ee53dad-f408-4f52-9efb-0442b7385820","amount":22.3,"user_id":"3323","description":"Panama Souvenir"},
 {"date":"2016-10-11","transaction_id":"43f4381d-485c-4262-b197-05c842a65b28","amount":24,"user_id":"3323","description":"Wolverine Action Figure"},
 {"date":"2018-03-09","transaction_id":"e0aae6ea-03e3-40d5-91bd-691a256a3095","amount":135.9,"user_id":"3323","description":"Baymax Teddy"}
 ]
